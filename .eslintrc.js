@@ -8,7 +8,7 @@ module.exports = {
     parser: '@babel/eslint-parser',
     requireConfigFile: false,
   },
-  extends: ['@nuxtjs', 'plugin:nuxt/recommended', 'prettier'],
+  extends: ['@nuxtjs','@nuxtjs/eslint-config-typescript', 'plugin:nuxt/recommended', 'prettier'],
   plugins: [],
   overrides: [
     {

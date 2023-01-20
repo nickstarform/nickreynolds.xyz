@@ -55,6 +55,9 @@ h2 {
   letter-spacing: -0.03em;
   margin: 0;
 }
+h1 h2 h3 body span a {
+  color: white;
+}
 .bg-img {
   background-attachment: fixed;
   background-image: url('./static/intro-bg.jpg');

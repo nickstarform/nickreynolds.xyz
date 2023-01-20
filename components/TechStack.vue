@@ -11,15 +11,7 @@
     <v-list v-if="miniVariant" color="transparent" class="flex-container">
       <v-list-item v-for="(item, i) in techStack" :key="i" class="flex">
         <v-list-item-action>
-          <el-tooltip
-            :content="item.iconDesc"
-            class="flex flex-center inline-flex justify-center items-center"
-            effect="customized"
-            :open-delay="300"
-            placement="bottom"
-          >
-            <component :is="item.iconObj" width="50" height="50"></component>
-          </el-tooltip>
+              <component :is="item.iconObj" width="50" height="50"></component>
         </v-list-item-action>
       </v-list-item>
     </v-list>
@@ -27,14 +19,9 @@
 </template>
 
 <script scoped>
-import { Tooltip } from 'element-ui'
 
 export default {
   name: 'TechStack',
-  components: {
-    [Tooltip.name]: Tooltip,
-  },
-
   data() {
     return {
       miniVariant: true,
@@ -70,7 +57,7 @@ export default {
       ],
     }
   },
-}
+};
 </script>
 
 <style scoped>

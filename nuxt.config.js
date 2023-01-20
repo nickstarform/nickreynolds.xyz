@@ -1,5 +1,5 @@
 // import colors
-import colors from 'vuetify/es5/util/colors'
+import colors from "./assets/css/colors.js";
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
