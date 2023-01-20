@@ -2989,10 +2989,10 @@ defined@^1.0.0:
   resolved "https://registry.yarnpkg.com/defined/-/defined-1.0.1.tgz#c0b9db27bfaffd95d6f61399419b893df0f91ebf"
   integrity sha512-hsBd2qSVCRE+5PmNdHt1uzyrFu5d3RwmFDKzyNZMFq/EwDNJF7Ee5+D5oEKF0hU6LhtoUF1macFvOe4AskQC1Q==
 
-defu@6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/defu/-/defu-6.1.0.tgz#7a5411655da73335c7d933256911f17c74443e2d"
-  integrity sha512-pOFYRTIhoKujrmbTRhcW5lYQLBXw/dlTwfI8IguF1QCDJOcJzNH1w+YFjxqy6BAuJrClTy6MUE8q+oKJ2FLsIw==
+defu@6.1.1, defu@^6.0.0, defu@^6.1.0, defu@^6.1.1:
+  version "6.1.1"
+  resolved "https://registry.npmjs.org/defu/-/defu-6.1.1.tgz"
+  integrity sha512-aA964RUCsBt0FGoNIlA3uFgo2hO+WWC0fiC6DBps/0SFzkKcYoM/3CzVLIa5xSsrFjdioMdYgAIbwo80qp2MoA==
 
 defu@^3.2.2:
   version "3.2.2"
@@ -3008,11 +3008,6 @@ defu@^5.0.0:
   version "5.0.1"
   resolved "https://registry.npmjs.org/defu/-/defu-5.0.1.tgz"
   integrity sha512-EPS1carKg+dkEVy3qNTqIdp2qV7mUP08nIsupfwQpz++slCVRw7qbQyWvSTig+kFPwz2XXp5/kIIkH+CwrJKkQ==
-
-defu@^6.0.0, defu@^6.1.0, defu@^6.1.1:
-  version "6.1.1"
-  resolved "https://registry.npmjs.org/defu/-/defu-6.1.1.tgz"
-  integrity sha512-aA964RUCsBt0FGoNIlA3uFgo2hO+WWC0fiC6DBps/0SFzkKcYoM/3CzVLIa5xSsrFjdioMdYgAIbwo80qp2MoA==
 
 delayed-stream@~1.0.0:
   version "1.0.0"
@@ -5970,17 +5965,17 @@ nuxt-purgecss@^2.0.0:
     glob-all "^3.2.1"
     purgecss "^5.0.0"
 
-nuxt-speedkit@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/nuxt-speedkit/-/nuxt-speedkit-2.1.2.tgz#46244229c524bebdca9d873edcf61401cd56348c"
-  integrity sha512-iUlfF/VjTj/H24Ir1QVtMrpr/EHU6WuUtHhIiEvZLskXIQ0Y4rbTPDbpYY5pIOfK2EQ5yWDPdd75O56Z6schWQ==
+nuxt-speedkit@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/nuxt-speedkit/-/nuxt-speedkit-2.1.3.tgz#273d30de07b834edd97754cfcca6a59ead89995c"
+  integrity sha512-vk4cI84LbIRf8jYuA5CNxJlImDQ0QPHTMu56+NuVkj6uphseOiKUjQI6NYuakhD0PgjJFqnLUee8j7iuamHFDg==
   dependencies:
     "@nuxt/image" "0.7.1"
     bowser "2.11.0"
     browserslist-useragent-regexp "3.0.2"
     buffer-image-size "0.6.4"
     deepmerge "4.2.2"
-    defu "6.1.0"
+    defu "6.1.1"
     dynamic-class-list "2.0.2"
     native-fetch "4.0.2"
     serialize-to-js "3.1.2"
