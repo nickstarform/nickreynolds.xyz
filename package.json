@@ -19,7 +19,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "ajv": "6.12.3",
     "axios": "^1.2.2",
-    "core-js": "^3.25.3",
+    "core-js": "^3.27.2",
     "element-ui": "^2.15.12",
     "nuxt": "^3.0.0",
     "nuxt-purgecss": "^2.0.0",
