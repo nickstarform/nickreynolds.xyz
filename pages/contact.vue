@@ -9,7 +9,7 @@
           <h3 class="text-primary mt-8 font-semibold mb-6">{{ message }}</h3>
 
           <form action="POST" @submit.prevent="submit($event)">
-            <div class="row">
+            <div class="row flex flex-center">
               <div class="left-column">
                 <label
                   for="fullName"

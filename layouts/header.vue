@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-toolbar
-      :v-if="!$vuetify.breakpoint.mdAndUp && !drawer"
+      :v-if="!$vuetify.breakpoint.mdAndUp"
       :color="!$vuetify.breakpoint.mdAndUp ? `` : `transparent`"
       :elevation="!$vuetify.breakpoint.mdAndUp ? `9` : `0`"
       absolute
