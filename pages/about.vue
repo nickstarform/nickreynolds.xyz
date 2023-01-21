@@ -1,7 +1,7 @@
 <template>
   <v-col class="pad flex flex-center">
     <div class="pad">
-      <v-card class="cardColor" elevation="9">
+      <v-card class="cardColor text-center" elevation="9">
         <h1 class="flex-center splash">Timeline of my (Academic) Life</h1>
       </v-card>
       <v-divider></v-divider>
@@ -23,7 +23,7 @@
             <v-card-title class="text-h6">
               {{ item.title }}
             </v-card-title>
-            <v-card-text class="cardColor text--primary">
+            <v-card-text class="cardColor text--primary textCard">
               {{ item.mainTxt }}
               <nuxt-img
                 v-if="item.img !== ''"
@@ -111,5 +111,12 @@ export default {
 }
 .cardColor {
   @include cardColor;
+}
+.textCard {
+  overflow-y: scroll;
+  max-height: 300px;
+}
+.text-center {
+  text-align: center;
 }
 </style>

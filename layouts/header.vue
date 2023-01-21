@@ -6,12 +6,12 @@
       :elevation="!$vuetify.breakpoint.mdAndUp ? `9` : `0`"
       absolute
       left
+      class=""
     >
       <v-icon
-        :v-if="!$vuetify.breakpoint.mdAndUp"
         class="hidden-md-and-up"
         color="--v-highlight-base"
-        @click.stop="drawer = !drawer"
+        @click.self="drawer = !drawer"
         >mdi-menu</v-icon
       >
     </v-toolbar>
@@ -23,6 +23,7 @@
       app
       :permanent="$vuetify.breakpoint.mdAndUp"
       width="20%"
+      :min-width="$vuetify.breakpoint.mdAndUp ? `` : `200px`"
       class="navbar cardColor"
       elevation="9"
     >

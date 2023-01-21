@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "nuxt --hostname 'localhost' --port 3000",
     "build": "nuxt build --analyze",
+    "test": "nuxt generate && nuxt start",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
