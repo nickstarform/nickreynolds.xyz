@@ -212,7 +212,7 @@ export default {
   display: block;
   @include cardColor;
 }
-@media only screen and (min-width: 360px) {
+@media only screen and (max-width: 500px) {
   .navbar {
     display: block !important;
     min-width:200px !important;
