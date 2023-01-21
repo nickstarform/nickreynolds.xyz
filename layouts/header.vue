@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-toolbar
-      :v-if="!$vuetify.breakpoint.mdAndUp"
+      :v-if="!$vuetify.breakpoint.mdAndUp && !drawer"
       :color="!$vuetify.breakpoint.mdAndUp ? `` : `transparent`"
       :elevation="!$vuetify.breakpoint.mdAndUp ? `9` : `0`"
       absolute
@@ -212,9 +212,10 @@ export default {
   display: block;
   @include cardColor;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 360px) {
   .navbar {
     display: block !important;
+    min-width:200px !important;
   }
 }
 </style>

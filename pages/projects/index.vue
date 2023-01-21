@@ -7,9 +7,13 @@
       <h1>List of Projects</h1>
     </v-card>
     <v-spacer></v-spacer>
-    <div id="gridStart" class="pad flex grid flex-center">
-      <v-list v-for="(project, i) in projects" :key="i" color="transparent">
-        <div class="imgContainer">
+    <div id="gridStart" class="pad grid">
+      <v-list
+          v-for="(project, i) in projects"
+          :key="i"
+          color="transparent"
+          class="item">
+        <div class="imgContainer item">
           <v-img
             :src="project.shrtImage"
             loading="lazy"
@@ -158,31 +162,49 @@ a {
 .grid {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: auto 1fr auto;
-  grid-template-rows: auto 1fr auto;
-  grid-auto-rows: 300px;
   justify-content: center;
   align-content: center;
   gap: 10px;
-  grid-auto-flow: column;
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   position: relative;
-  min-width: 300px;
-  min-height: 300px;
-  width: 750px;
+  min-width: 160px;
   grid-area: auto;
   grid-row-start: auto;
   grid-column-start: auto;
   cursor: pointer;
 }
 
+.grid::before {
+  content: '';
+  width: 0;
+  padding-bottom: 0%;
+  grid-row: 1;
+  grid-column: 1;
+}
+.grid > *:first-child {
+  grid-row: 1;
+  grid-column: 1;
+}
+.item {
+  overflow: hidden;
+  position: relative;
+  width: 30%;
+  min-width: 150px;
+  min-height: 150px;
+  width: 100%;
+  height: 100%;
+}
+
 .imgContainer {
   display: flex;
   position: relative;
   text-align: bottom;
-  width: 300px;
-  height: 300px;
+  width: 100%;
   min-width: 150px;
+  overflow: hidden;
 }
+
 .frontCharContent {
   text-align: center;
   bottom: 0;
