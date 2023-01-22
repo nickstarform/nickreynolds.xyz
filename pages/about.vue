@@ -114,9 +114,13 @@ export default {
 }
 .textCard {
   overflow-y: scroll;
-  max-height: 300px;
 }
 .text-center {
   text-align: center;
+}
+@media only screen and (max-width: 500px) {
+  .textCard {
+    max-height: 100px !important;
+  }
 }
 </style>

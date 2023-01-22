@@ -7,6 +7,7 @@
       <h1>List of Projects</h1>
     </v-card>
     <v-spacer></v-spacer>
+    <div class="pad">
     <div id="gridStart" class="pad grid">
       <v-list
           v-for="(project, i) in projects"
@@ -58,6 +59,7 @@
           </div>
         </div>
       </v-list>
+    </div>
     </div>
   </v-col>
 </template>
@@ -166,9 +168,10 @@ a {
   align-content: center;
   gap: 10px;
   grid-auto-flow: row dense;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   position: relative;
   min-width: 160px;
+  width: 100%;
   grid-area: auto;
   grid-row-start: auto;
   grid-column-start: auto;
@@ -177,7 +180,7 @@ a {
 
 .grid::before {
   content: '';
-  width: 0;
+  width: 300px;
   padding-bottom: 0%;
   grid-row: 1;
   grid-column: 1;
@@ -187,13 +190,12 @@ a {
   grid-column: 1;
 }
 .item {
-  overflow: hidden;
+  display: flex;
   position: relative;
-  width: 30%;
   min-width: 150px;
   min-height: 150px;
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 300px;
 }
 
 .imgContainer {
@@ -202,7 +204,6 @@ a {
   text-align: bottom;
   width: 100%;
   min-width: 150px;
-  overflow: hidden;
 }
 
 .frontCharContent {
@@ -215,6 +216,7 @@ a {
 }
 .backCharContent {
   text-align: none;
+  overflow: scroll;
 }
 .charContent {
   @include cardColor;
@@ -224,7 +226,6 @@ a {
   margin: auto;
 }
 .compress {
-  overflow: hidden;
 }
 .backCharContent h3 {
   @include cardColor;
@@ -280,7 +281,7 @@ a {
 .bioLink a {
 }
 .open .details {
-  display: block;
+  display: flex;
   height: 100%;
 }
 .open .charContent {
