@@ -101,7 +101,7 @@ export default {
           linkIcon: 'IconsGithub',
           isFlipped: false,
         },
-        BHR7: {
+        'BHR7': {
           name: 'BHR7 disk-to-envelope',
           shrtDesc:
             'We conduct high resolution continuum and kinematic observations towards BHR7 to link the large scale envelope structures down to the compact disk.',
@@ -111,13 +111,23 @@ export default {
           linkIcon: 'IconsGithub',
           isFlipped: false,
         },
-        'OU PhD': {
+        'OU PhD 2023': {
           name: 'PhD Dissertation',
           shrtDesc:
             'I completed my PhD at the University of Oklahoma in 2023 in Physics and Astronomy.',
           readmeFile: '',
           shrtImage: '/iram30m_1.jpg',
-          link: 'https://github.com/nickalaskreynolds/PhD-Thesis-2023',
+          link: 'https://github.com/nickalaskreynolds/PhD-Dissertation-2023',
+          linkIcon: 'IconsGithub',
+          isFlipped: false,
+        },
+        'OU Masters 2021': {
+          name: 'Masters Thesis',
+          shrtDesc:
+            'I completed my Masters at the University of Oklahoma in spring 2021 in Physics and Astronomy.',
+          readmeFile: '',
+          shrtImage: '/iram30m_1.jpg',
+          link: 'https://github.com/nickalaskreynolds/Masters-Thesis-2021',
           linkIcon: 'IconsGithub',
           isFlipped: false,
         },
