@@ -2,7 +2,7 @@
   <v-img
     class="solo-pfp"
     alt="Nick Profile Picture"
-    src="/solopfp.png"
+    src="/solopfp.jpg"
     contain
   />
 </template>

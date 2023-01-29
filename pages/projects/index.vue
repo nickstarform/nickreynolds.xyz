@@ -15,8 +15,7 @@
           color="transparent"
           class="item">
         <div class="imgContainer item">
-          <nuxt-img
-            preset="projectSquare"
+          <v-img
             :src="project.shrtImage"
             loading="lazy"
             :style="getFlippedClass(project)"
@@ -77,7 +76,7 @@ export default {
           shrtDesc:
             'We resolved the system, L1448 IRS3B, to be a compact ring with IRS3B-a/b to be inside/outside of the ring respectively. Additionally we found the disk is gravitationally unstable and could be a system with 5 sources within 2500au. Paper accepted to APJL',
           readmeFile: '',
-          shrtImage: '/l1448irs3bcontinuum.png',
+          shrtImage: '/l1448irs3bcontinuum.jpg',
           link: 'https://github.com/nickalaskreynolds/ALMAc4-L1448IRS3B-2016.1.01520.S',
           linkIcon: 'IconsGithub',
           isFlipped: false,
@@ -87,7 +86,7 @@ export default {
           shrtDesc:
             'Statistical study of 32 Perseus protostars at high resolution (8au). Paper submitted to APJL',
           readmeFile: '',
-          shrtImage: '/perseusmultiplescontinuum.png',
+          shrtImage: '/perseusmultiplescontinuum.jpg',
           link: 'https://github.com/nickalaskreynolds/ALMAc7-PerseusMultiples-Statistics',
           linkIcon: 'IconsGithub',
           isFlipped: false,
@@ -97,7 +96,7 @@ export default {
           shrtDesc:
             'Statistical study of 33 Perseus protostars at high sensitivity kinematic observations to determine the central potential masses for each of the sources. Paper in prep.',
           readmeFile: '',
-          shrtImage: '/perseusmultiplesspectra.png',
+          shrtImage: '/perseusmultiplesspectra.jpg',
           link: 'https://github.com/nickalaskreynolds/ALMAc5-PerseusMultiples-2017.1.0053.S',
           linkIcon: 'IconsGithub',
           isFlipped: false,
@@ -107,7 +106,7 @@ export default {
           shrtDesc:
             'Statistical study of ~100 protostars in Orion and Perseus molecular clouds using the medium spectrograph Triplespec found on the Apache Pointe Observatory. Paper in prep.',
           readmeFile: '',
-          shrtImage: '/apo.png',
+          shrtImage: '/apo.jpg',
           link: 'https://github.com/nickalaskreynolds/APO-Triplespec-Protostar-Spectra',
           linkIcon: 'IconsGithub',
           isFlipped: false,
@@ -117,7 +116,7 @@ export default {
           shrtDesc:
             'Mapping the D/H ratio and CO for several Perseus protostars using the Sub Millimeter Telescope of the ARO consortium. Paper in prep.',
           readmeFile: '',
-          shrtImage: '/smt.png',
+          shrtImage: '/smt.jpg',
           link: 'https://github.com/nickalaskreynolds/SMT-Protostar-Mapping',
           linkIcon: 'IconsGithub',
           isFlipped: false,
@@ -137,7 +136,7 @@ export default {
           shrtDesc:
             'We conduct high resolution continuum and kinematic observations towards BHR7 to link the large scale envelope structures down to the compact disk. Paper in prep.',
           readmeFile: '',
-          shrtImage: '/bhr7-12co.png',
+          shrtImage: '/bhr7-12co.jpg',
           link: 'https://github.com/nickalaskreynolds/ALMAc6-BHR7-2019.1.00463.S',
           linkIcon: 'IconsGithub',
           isFlipped: false,
