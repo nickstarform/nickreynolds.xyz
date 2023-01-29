@@ -65,7 +65,6 @@ h1 h2 h3 body span a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 10%;
 }
 
 .flex-center {

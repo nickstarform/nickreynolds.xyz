@@ -84,6 +84,7 @@ export default {
     '@nuxtjs/vuetify',
     '@nuxt/postcss8',
     '@nuxtjs/eslint-module',
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -94,6 +95,36 @@ export default {
     'nuxt-purgecss',
     '@nuxt/image'
   ],
+
+  // For @nuxt/image settings
+  image: {
+    // The screen sizes predefined by `@nuxt/image`:
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536
+    },
+    presets: {
+      projectSquare: {
+        modifiers: {
+          format: 'jpg',
+          width: 450,
+          height: 450
+        }
+      },
+      bgImage: {
+        modifiers: {
+          format: 'jpg',
+          width: 1920,
+          height: 1440
+        }
+      }
+    }
+  },
   sitemap: {
     // !STARTERCONF Change the siteUrl
     /** Without additional '/' on the end, e.g. https://theodorusclarence.com */

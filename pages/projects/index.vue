@@ -15,7 +15,8 @@
           color="transparent"
           class="item">
         <div class="imgContainer item">
-          <v-img
+          <nuxt-img
+            preset="projectSquare"
             :src="project.shrtImage"
             loading="lazy"
             :style="getFlippedClass(project)"
@@ -265,8 +266,6 @@ a {
   right: 0;
   margin: auto;
 }
-.compress {
-}
 .backCharContent h3 {
   @include cardColor;
   display: inline-block;
@@ -317,8 +316,6 @@ a {
 }
 .bioLink {
   margin-top: 20px;
-}
-.bioLink a {
 }
 .open .details {
   display: flex;
