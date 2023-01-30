@@ -8,11 +8,11 @@
       left
       class=""
     >
-      <IconsMdimenu
+      <v-btn
         class="hidden-md-and-up"
         color="--v-highlight-base"
         @click.self="drawer = !drawer"
-        />
+      ><IconsMdimenu @click.self="drawer = !drawer"/></v-btn>
     </v-toolbar>
     <v-navigation-drawer
       v-model="drawer"
