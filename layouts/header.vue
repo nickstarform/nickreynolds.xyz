@@ -8,12 +8,11 @@
       left
       class=""
     >
-      <v-icon
+      <IconsMdimenu
         class="hidden-md-and-up"
         color="--v-highlight-base"
         @click.self="drawer = !drawer"
-        >mdi-menu</v-icon
-      >
+        />
     </v-toolbar>
     <v-navigation-drawer
       v-model="drawer"
@@ -41,7 +40,7 @@
         <div class="d-flex">
           <v-list-item-action>
             <v-list-item-subtitle
-              ><v-icon>mdi-map-marker</v-icon></v-list-item-subtitle
+              ><IconsMdimapmarker width="24" color="white"/></v-list-item-subtitle
             >
           </v-list-item-action>
           <v-list-item-content>
@@ -67,7 +66,7 @@
             <a v-if="item.href.startsWith('https')" :href="item.href" target="_blank">
               <component :is="item.icon" width="24"/></a>
             <nuxt-link v-else to="contact">
-              <v-icon width="24">mdi-email</v-icon>
+              <IconsMdiemail width="24"/>
             </nuxt-link>
           </v-list-item-content>
         </v-list-item>
@@ -85,7 +84,7 @@
           :target="item.to.startsWith('https') ? `_blank` : ``"
           :href="item.to.startsWith('https') ? item.to : ``">
           <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
+            <component :is="item.icon" width="24"/>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -138,27 +137,27 @@ export default {
           button: true,
         },
         {
-          icon: 'mdi-home',
+          icon: 'IconsMdihome',
           title: 'Hello',
           to: '/',
         },
         {
-          icon: 'mdi-pencil',
+          icon: 'IconsMdipencil',
           title: 'About Me',
           to: '/about',
         },
         {
-          icon: 'mdi-laptop',
+          icon: 'IconsMdilaptop',
           title: 'Projects',
           to: '/projects',
         },
         {
-          icon: 'mdi-briefcase',
+          icon: 'IconsMdibriefcase',
           title: 'CV/Resume',
           to: '/cv',
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'IconsMdichartbubble',
           title: 'Contact',
           to: '/contact',
         },

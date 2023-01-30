@@ -15,7 +15,7 @@
           color="transparent"
           class="item">
         <div class="imgContainer item">
-          <v-img
+          <v-img format="webp"
             :src="project.shrtImage"
             loading="lazy"
             :style="getFlippedClass(project)"

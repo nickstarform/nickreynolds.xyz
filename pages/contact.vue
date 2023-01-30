@@ -1,11 +1,11 @@
 <template>
   <v-col class="pad">
-    <v-card elevation="9" class="pad flex flex-center cardColor">
+    <v-card elevation="9" class="pad flex flex-center cardColor tight-page">
       <div>
         <div class="flex flex-center w-full">
           <h1 class="text-center splash">{{ title }}</h1>
         </div>
-        <div class="wrapper flex flex-center">
+        <div class="flex flex-center">
           <h3 class="text-primary mt-8 font-semibold mb-6">{{ message }}</h3>
 
           <form action="POST" @submit.prevent="submit($event)">
@@ -62,7 +62,7 @@
                 class="highlight text-gray-700 dark:text-gray-200 dark:bg-gray-800 dark:border-dark-light block w-fit bg-background-form border border-border-color-primary shadow rounded outline-none focus:border-primary dark:focus:border-gray-500 mb-2 p-4 right-column"
               ></textarea>
             </div>
-            <div class="row">
+            <div>
               <div
                 v-if="{ btnActive }"
                 class="flex flex-center w-full highlight"
@@ -117,7 +117,7 @@ export default {
       const data = new FormData(event.target)
       this.$axios
         .$post('https://formspree.io/f/xrgvbzok', data)
-        .then((response) => {
+        .then(() => {
           this.timerCount = 5000
           this.message = 'Thank you for getting in touch!'
           this.btnActive = false
@@ -145,6 +145,10 @@ export default {
 }
 .cardColor {
   @include cardColor;
+}
+.tight-page {
+  width: 30vw;
+  min-width: 300px;
 }
 
 .row {
