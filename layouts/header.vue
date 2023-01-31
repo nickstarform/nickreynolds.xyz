@@ -8,11 +8,12 @@
       left
       class=""
     >
-      <v-btn
+      <v-icon
         class="hidden-md-and-up"
         color="--v-highlight-base"
         @click.self="drawer = !drawer"
-      ><IconsMdimenu @click.self="drawer = !drawer"/></v-btn>
+        >$menu</v-icon
+      >
     </v-toolbar>
     <v-navigation-drawer
       v-model="drawer"
@@ -102,6 +103,8 @@
   </div>
 </template>
 <script type="text/javascript">
+import MdiMenu from '@/components/Icons/Mdimenu.vue'
+
 export default {
   name: 'HeadDrawerLeft',
   components: {},
@@ -111,6 +114,7 @@ export default {
       clipped: true,
       drawer: null,
       fixed: true,
+      menu: MdiMenu,
       coords :[
         {
           icon: "IconsGithub",
@@ -130,12 +134,6 @@ export default {
         },
       ],
       items: [
-        {
-          icon: 'chevron-',
-          title: '',
-          to: '',
-          button: true,
-        },
         {
           icon: 'IconsMdihome',
           title: 'Hello',
