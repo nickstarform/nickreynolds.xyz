@@ -14,7 +14,7 @@
     "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
   },
   "dependencies": {
-    "@nuxt/cli": "^2.15.8",
+    "@nuxt/cli": "^2.16.3",
     "@nuxt/webpack": "^2.15.8",
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/sitemap": "^2.4.0",
